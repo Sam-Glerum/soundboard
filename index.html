@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+    <!-- custom CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div id="first_row" class="row">
+                <div class="col-md-3 first_row">
+                    <button class="btn-primary" type="button" value="Play" onclick="playSound(1)">CEU CA IEN</button>
+                    <audio id="1" src="sounds/Dyon/KEU KA IEN.wav"></audio>
+                </div>
+
+                <div class="col-md-3 first_row">
+                    <button class="btn-primary" type="button" value="Play" onclick="playSound(2)">JAAAAA</button>
+                    <audio id="2" src="sounds/Dyon/JAAAAAAAAAAAAAAAA.wav"></audio>
+                </div>
+
+                <div class="col-md-3 first_row">
+                    <button class="btn-primary" type="button" value="Play" onclick="playSound(3)">VERSVERSNEDEN COKE</button>
+                    <audio id="3" src="sounds/Dyon/VERSVERSNEDEN COKE.wav"></audio>
+                </div>
+                <div class="col-md-3 first_row">
+                    <button class="btn-primary" type="button" value="Play" onclick="playSound(4)">COKE!</button>
+                    <audio id="4" src="sounds/Dyon/COKE!.wav"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function playSound(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+        }
+    </script>
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
